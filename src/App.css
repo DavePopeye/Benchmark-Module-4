@@ -1,38 +1,70 @@
-.App {
-  text-align: center;
+body {
+  background-color     : rgb(38, 100, 103);
+  background           : linear-gradient(143deg, rgb(15, 68, 95) 0%, rgb(14, 41, 66) 40%, rgba(0, 0, 0, 5) 94%) no-repeat;
+  color                : white;
+  background-attachment: fixed;
+  background-repeat    : no-repeat;
+  background-size      : cover;
+  background-position  : center;
+
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+.leftCol {
+  background-color: black;
+  color           : white;
+  width           : 230px !important;
+  min-width       : 230px !important;
+  max-height      : 100% !important;
+  min-height      : 100% !important;
+  float           : left;
+  padding-left    : 0 !important;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.side-nav-class ul {
+  margin-top: -27px !important;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.sideLine {
+  border-left: 4px solid green;
+  position   : relative;
+  right      : 1.2rem !important;
+
 }
 
-.App-link {
-  color: #61dafb;
+.side-nav-class {
+  height         : 100%;
+  display        : flex;
+  flex-direction : column;
+  justify-content: space-between;
+  height         : 100vh;
+  z-index        : 1;
+  top            : 0;
+  left           : 0;
+  overflow-x     : hidden;
+  padding-top    : 20px;
+  color          : #9A9A9A;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.side-nav-class ul {
+  list-style     : none;
+  padding        : 1.25rem;
+  display        : flex;
+  flex-direction : column;
+  justify-content: space-between;
+}
+
+.side-nav-class li {
+  text-decoration: none;
+  font-size      : 1rem;
+  display        : flex;
+  justify-content: flex-start;
+}
+
+.side-nav-class a {
+  color      : #9A9A9A;
+  font-family: proxima-nova, sans-serif;
+  font-weight: bold;
+  font-style : normal;
 }
